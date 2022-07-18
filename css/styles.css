@@ -110,19 +110,24 @@ body {
 /* .pBlue {
   font-size: 2rem;
   color: blue;
-}
+}*/
 
 .pRed {
   font-size: 2rem;
   color: red;
-} */
-
-#results :nth-child(even){
-  font-size: 2rem;
-  color: blue;
 }
 
-#results :nth-child(odd){
-  font-size: 2rem;
-  color: red;
+#results p {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  margin: 1rem;
+  text-align: center;
+}
+
+#results :nth-child(even) {
+  background-color: rgb(102, 102, 126);
+}
+
+#results :nth-child(odd) {
+  background-color: rgb(158, 155, 155);
 }

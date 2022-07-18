@@ -43,14 +43,7 @@ function getNumbers() {
       `Factorial = ${multiplyAll}`
     );
 
-    // console.log(`num1 = ${num1}, num2 = ${num2}`);
-    // console.log(`difference = ${difference}`);
-    // console.log(`sum = ${sum}`);
-    // console.log(`product = ${product}`);
-    // console.log(`quotient = ${quotient}`);
-    // console.log(`remainder = ${remainder}`);
-    // console.log(`all numbers added = ${sumAll}`);
-    // console.log(`all numbers multiplied = ${multiplyAll}`);
+
   }
 }
 
@@ -81,27 +74,31 @@ function displayResults(
   //create <p></p> tag
   let tagPsum = document.createElement("p");
   tagPsum.innerHTML = sumResult;
-  // tagPsum.classList.add("pBlue");
+  tagPsum.classList.add("col");
 
   let tagPdifference = document.createElement("p");
   tagPdifference.innerHTML = differenceResult;
-  // tagPdifference.classList.add("pRed");
+  tagPsum.classList.add("col");
 
   let tagPproduct = document.createElement("p");
   tagPproduct.innerHTML = productResult;
-  // tagPsum.classList.add("pBlue");
+  tagPsum.classList.add("col");
 
   let tagPquotient = document.createElement("p");
   tagPquotient.innerHTML = quotientResult;
+tagPsum.classList.add("col");
 
   let tagPremainder = document.createElement("p");
   tagPremainder.innerHTML = remainderResult;
+  tagPsum.classList.add("col");
 
   let tagPsumAll = document.createElement("p");
   tagPsumAll.innerHTML = sumAllResult;
+  tagPsum.classList.add("col");
 
   let tagPfactorial = document.createElement("p");
   tagPfactorial.innerHTML = factorialResult;
+  tagPsum.classList.add("col");
 
   //add to the innerHTML of the #results" div
   results.appendChild(tagPsum);
