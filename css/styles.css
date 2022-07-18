@@ -106,3 +106,23 @@ body {
   opacity: 1;
   transition: 500ms;
 }
+
+/* .pBlue {
+  font-size: 2rem;
+  color: blue;
+}
+
+.pRed {
+  font-size: 2rem;
+  color: red;
+} */
+
+#results :nth-child(even){
+  font-size: 2rem;
+  color: blue;
+}
+
+#results :nth-child(odd){
+  font-size: 2rem;
+  color: red;
+}

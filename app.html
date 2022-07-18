@@ -98,9 +98,27 @@
     <!-- MAIN -->
     <main class="content">
       <div class="container mt-5 align-items-center justify-content-center">
-        <h1>APP UI GOES HERE</h1>
-        <input type="text" id="message" placeholder="Enter a Message" />
-        <button id="btnSubmit" class="btn btn-primary">Display Message</button>
+        <h1>JavaScript Operators</h1>
+        <p>Perform calculations with the 2 numbers using various Operators</p>
+        <p>To start, enter 2 numbers and press the CALCULATE button.</p>
+        <div class="row gy-3 row-cols-1">
+          <div class="col">
+            <label for="numberOne">num1</label>
+            <input type="text" id="numberOne" placeholder="Enter a Number" value="3" />
+            </button>
+          </div>
+          <div class="col">
+            <label for="numberOne">num2</label>
+            <input type="text" id="numberTwo" placeholder="Enter a Number" value="6"/>
+          </div>
+          <button id="btnSubmit" class="btn btn-primary my-2 text-uppercase fw-bold">
+            Calculate!
+          </button>
+          <h2 class="text-uppercase mt-5">Results</h2>
+          <div id="results">
+
+          </div>
+        </div>
       </div>
     </main>
     <!-- FOOTER -->
@@ -143,7 +161,7 @@
     <!-- JS file -->
     <script src="/js/site.js"></script>
     <script>
-      document.getElementById("btnSubmit").addEventListener("click", getValue2);
+      document.getElementById("btnSubmit").addEventListener("click", getNumbers);
     </script>
   </body>
 </html>
